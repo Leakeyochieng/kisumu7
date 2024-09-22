@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Kisumu Rugby 7</title>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <div class="bg-gray-100">
+            <nav class="block md:flex w-11/12 mx-auto justify-between p-3 bg-gray-100">
+                <div class="flex gap-4">
+                    <img class="w-16 h-16 object-cover rounded-md" src="./images/e1b68b221bd6797255cdba36baa0214e.jpg" alt="logo"/>
+                    <h2 class="font-semibold text-2xl pt-3 text-orange-500">Kisumu Rugby 7</h2>
+                </div>
+                <ul class="flex gap-6 p-3 font-semibold">
+                    <li class="text-blue-800 hover:text-orange-500 cursor-pointer">Home</li>
+                    <li class="text-blue-800 hover:text-orange-500 cursor-pointer">About</li>
+                    <li class="text-blue-800 hover:text-orange-500 cursor-pointer">Heritage</li>
+                    <li class="text-blue-800 hover:text-orange-500 cursor-pointer">Contact</li>
+                    <!-- Dropdown -->
+                    <li class="relative dropdown">
+                        <span class="text-blue-800 hover:text-orange-500 cursor-pointer">More</span>
+                        <ul class="absolute hidden dropdown-menu bg-gray-100 p-3 rounded-md shadow-lg -ml-20 md:-ml-0">
+                            <li class="p-2 hover:bg-gray-300 cursor-pointer">News</li>
+                            <li class="p-2 hover:bg-gray-300 cursor-pointer">Events</li>
+                            <li class="p-2 hover:bg-gray-300 cursor-pointer">Sponsors</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- home header -->
+        <div class="block md:flex pt-10 pb-10">
+            <div class="flex-1">
+                <img src="./images/7562c69a4caa2c0a97d6fca3ee8d5b04.jpg" alt="banner image"/>
+            </div>
+            <div class="flex-1 w-11/12 mx-auto md:w-full">
+                <h1 class="font-semibold pb-5 text-3xl text-orange-500">Unleash the Power of Rugby – Where Legends Are Made!</h1>
+                <p class="leading-relaxed">Welcome to Kisumu Rugby, the ultimate hub for everything rugby! Whether you’re a player, coach, fan, or newcomer, we’re here to bring you the heart-pounding action, tactical insights, and passionate stories that make rugby one of the world’s most thrilling sports. From grassroots competitions to the global stage, our goal is to unite rugby lovers across the globe with unmatched coverage and content.</p>
+                <div class="pt-10 flex justify-between w-full md:w-7/12 gap-10">
+                    <button class="bg-cyan-600 p-3 w-36 rounded-md text-white font-semibold shadow-sm shadow-gray-500">Join Us</button>
+                    <button class="bg-cyan-600 p-3 w-36 rounded-md text-white font-semibold shadow-sm shadow-gray-500">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- about section -->
+        <hr/>
+        <section>
+            <div class="block md:flex w-11/12 mx-auto pt-10 pb-10">
+                <div class="w-full md:w-7/12">
+                    <h2 class="font-semibold text-2xl text-cyan-700 pb-5">About Kisumu Rugby 7</h2>
+                    <p class="leading-relaxed">
+                        Welcome to Kisumu Rugby 7, the home of passion, perseverance, and high-octane rugby action! Established in the heart of Kisumu, we are dedicated to fostering a strong rugby culture while empowering the next generation of players through teamwork, skill, and discipline.
+                    </p>
+                    <p class="leading-relaxed">
+                        At Kisumu Rugby 7, our goal is to celebrate the spirit of rugby in all its forms – from the grassroots levels to the elite stages. We believe that rugby isn't just a game but a way of life. It brings together individuals from diverse backgrounds <a class="text-cyan-500" href="#">Learn More...</a>
+                    </p>
+                </div>
+                <div class="flex-1 mx-auto">
+                    <img class="mx-auto" src="./images/a0ba09277a35bd22f4c1aeeef1a09c05.jpg"/>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="bg-gray-950 pt-10 pb-10 text-white">
+            <div class="w-11/12 mx-auto block md:flex justify-between">
+                <div class="flex-1 flex gap-4">
+                    <img class="w-16 h-16 object-cover rounded-md" src="./images/e1b68b221bd6797255cdba36baa0214e.jpg" alt="logo"/>
+                    <h2 class="font-semibold text-2xl pt-3 text-orange-500">Kisumu Rugby 7</h2>
+                </div>
+                <div class="flex-1 flex flex-col gap-2">
+                    <label>Get our Newsletter</label>
+                    <div class="flex">
+                        <input placeholder="Enter your email address" class="p-3 bg-gray-300 rounded-md w-full"/>
+                        <button class="bg-orange-800 p-3 -ml-10 rounded-md">Send</button>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <ul class="block gap-6 p-3 font-semibold mx-auto w-full md:w-4/12">
+                        <li class="text-blue-800 hover:text-orange-500 cursor-pointer">Home</li>
+                        <li class="text-blue-800 hover:text-orange-500 cursor-pointer">About</li>
+                        <li class="text-blue-800 hover:text-orange-500 cursor-pointer">Heritage</li>
+                        <li class="text-blue-800 hover:text-orange-500 cursor-pointer">Contact</li>
+                    </ul>
+                </div>
+            </div>
+            <hr/>
+            <p class="pt-5 pb-5 text-red-300 text-center">&copy; kisumu-rugby-7 2024 all rights reserved</p>
+        </div>
+    </footer>
+    <!-- JavaScript dropdown -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropdown = document.querySelector('.dropdown');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            dropdown.addEventListener('click', () => {
+                dropdownMenu.classList.toggle('hidden');
+            });
+x
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
